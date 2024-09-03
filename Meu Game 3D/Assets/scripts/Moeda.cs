@@ -12,13 +12,14 @@ public class Moeda : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
+            FindFirstObjectByType<GameManager>().SubtrairMoedas(valor:1);
             Destroy((gameObject));
         }
     }
