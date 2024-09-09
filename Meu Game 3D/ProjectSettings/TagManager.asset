@@ -6,6 +6,7 @@ TagManager:
   tags:
   - "ch\xE3o"
   - moeda
+  - Moeda
   layers:
   - Default
   - TransparentFX
