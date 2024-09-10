@@ -25,10 +25,12 @@ public class GameManager : MonoBehaviour
     {
         restantes -= valor;
         hud.text = $"kwanazas restantes: {restantes}";
+        source.PlayOneShot(clipMoeda);
 
         if (restantes <= 0)
         {
             msgVitoria.text = "És brabo, nengue!";
+            source.Stop();
             source.PlayOneShot(clipVitoria);
         }    
     }
